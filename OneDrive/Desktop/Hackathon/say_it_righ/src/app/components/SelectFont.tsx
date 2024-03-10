@@ -14,7 +14,7 @@ type Props = {}
 
 const SelectFont = (props: Props) => {
     return (
-        <div className="flex justify-center flex-wrap content-center mr-[15px]">
+        <div className="flex justify-center flex-wrap content-center mr-[15px]  h-[37px] text-[17px]">
             <Select>
                 <SelectTrigger className="w-[180px]">
                     <SelectValue placeholder="Select your style" />

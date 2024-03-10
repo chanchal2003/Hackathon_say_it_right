@@ -7,12 +7,8 @@ type Props = {};
 
 const Search = (props: Props) => {
   return (
-    <div className="flex items-center w-full relative mt-[30px] ">
-      <Input
-        className='flex-grow border h-[50px] rounded-2xl pl-[20px] pr-[40px] text-[20px] font-medium bg-gray-100 text-zinc-500 border-purple-700'
-        type='text'
-        placeholder='Search for any word...'
-      />
+    <div className="flex items-center w-full relative">
+      <input placeholder="Search any word..." className=" placeholder:font-bold rounded-2xl outline-purple-700 bg-gray-200 h-12  sm:h-[64px] w-full px-4 pr-12 dark:bg-slate-900 z-10" type="text"></input>
       <Button
         className="absolute right-0 border-none bg-gray-100 top-[2px]"
         variant="outline"

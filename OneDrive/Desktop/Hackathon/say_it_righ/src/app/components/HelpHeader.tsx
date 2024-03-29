@@ -2,7 +2,7 @@ import React from 'react'
 
 type Props = {}
 
-const Header = (props: Props) => {
+const HelpHeader = (props: Props) => {
   return (
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="500" viewBox="0 0 1500 600" preserveAspectRatio="none">
@@ -30,4 +30,4 @@ const Header = (props: Props) => {
   )
 }
 
-export default Header
+export default HelpHeader

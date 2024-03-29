@@ -12,13 +12,15 @@ const PhoneticsAudio = ({ item }: { item: { phonetics?: { text: string; audio: s
 
     // Ensure firstPhonetic?.audio is always a string or an array of strings
     const audio = firstPhonetic?.audio || '';
-
+    // const audio = "/ ʃIpIŋ /";
     const [play] = useSound(audio);
+
 
     const playAudio = () => {
         if (audio) {
             play();
         }
+        
     };
 
     return (

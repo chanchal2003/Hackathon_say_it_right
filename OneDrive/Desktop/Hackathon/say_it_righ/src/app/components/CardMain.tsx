@@ -7,7 +7,7 @@ const CardMain = (props: Props) => {
         <>
             <div className='m-auto w-[510px] text-gray-600'>
                 <h1 className="w-[255px] m-auto text-5xl font-semibold">Need Help?</h1>
-                <p className='text-xl pt-4 font-medium'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p className='text-xl pt-4 font-medium w-[232px] m-auto'>We are here to help you;)</p>
             </div>
             <div className="w-[1000px] grid grid-cols-3 gap-4 m-auto grid-rows-2 mt-10 mb-10">
                 <div className="max-w-sm w-80 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">

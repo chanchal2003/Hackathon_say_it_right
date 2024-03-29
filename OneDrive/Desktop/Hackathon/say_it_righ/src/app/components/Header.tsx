@@ -7,6 +7,10 @@ const Header = (props: Props) => {
     <div>
       <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="500" viewBox="0 0 1500 600" preserveAspectRatio="none">
         <defs>
+          {/* <linearGradient id="myGradient" gradientTransform="rotate(90)">
+            <stop offset="10%" stop-color="#4f46e5" />
+            <stop offset="90%" stop-color="#93c5fd" />
+          </linearGradient> */}
           <linearGradient id="myGradient" gradientTransform="rotate(90)">
             <stop offset="10%" stop-color="#4f46e5" />
             <stop offset="90%" stop-color="#93c5fd" />

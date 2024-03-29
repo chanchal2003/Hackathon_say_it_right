@@ -21,8 +21,8 @@ export function ModeToggle() {
     return (
         <>
             <div className="flex">
-                <SelectFont></SelectFont>
-                <Separator orientation="vertical"></Separator>
+                {/* <SelectFont></SelectFont> */}
+                {/* <Separator orientation="vertical"></Separator> */}
                 <div>
                     <div className="toggle-container flex w-[70px] justify-between items-center mr-[10px]">
                         {/* click is on the icon 

@@ -5,15 +5,25 @@ import { ModeToggle } from "./components/ModeToggle";
 import { RiBookLine } from "react-icons/ri";
 import { useEffect, useState } from "react";
 import Phoneticstext from "./components/Phoneticstext";
-// import PhoneticsAudio from "./components/PhoneticsAudio";
-
+import PhoneticsAudio from "./components/PhoneticsAudio";
+import axios from 'axios';
 import Help from "./components/Help";
+import Link from "next/link";
+import { FaExternalLinkAlt } from "react-icons/fa";
+
 
 
 // export default function Home() {
 
-//   const [searchWord, setSearchWord] = useState("hello")
+//   const [searchWord, setSearchWord] = useState("practise")
 //   const [data, setData] = useState<any[]>([]);
+
+//   useEffect(() => {
+//     axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`).then((res) => {
+//       setData(res.data);
+//       console.log(res.data)
+//     })
+//   }, [])
 
 //   // const api = `https://api.dictionaryapi.dev/api/v2/entries/en/${searchWord}`;
 //   // console.log(api)
@@ -51,8 +61,7 @@ import Help from "./components/Help";
 //           <div className="flex flex-col gap-1">
 //             <div className="flex justify-between w-full h-16 items-center">
 //               <h1 className="text-[64px] font-bold">{item.word}</h1>
-//               {/* <PhoneticsAudio item={item}></PhoneticsAudio> */}
-//               {/* <PhoneticsAudio></PhoneticsAudio> */}
+//               <PhoneticsAudio item={item}></PhoneticsAudio>
 //             </div>
 
 //             <Phoneticstext item={item}></Phoneticstext>
@@ -85,11 +94,39 @@ import Help from "./components/Help";
 //                     <p>No synonyms</p>
 //                   )}
 //                 </div> */}
+//                 {meaning.synonyms.length > 0 && (
+//                   <div className="flex gap-2 items-center">
+//                     <p className="text-xl text-gray-400">Synonyms :</p>
+
+//                     <p className="text-xl">{meaning.synonyms.map((d, i) => d).join(", ")}</p>
+//                   </div>
+//                 )}
 //               </section>
 //             </div>
 //           ))}
 
 //           <div className="w-full h-[1px] bg-gray-200 rounded-full"></div>
+//           <div>
+//             {
+//               item?.sourceUrls.length > 0 && (
+//                 // <p>Source url is present</p>
+//                 <div className="flex gap-2">
+//                   <p>Source :</p>
+
+//                   <Link
+//                     target="_blank"
+//                     href={item?.sourceUrls[0]}
+//                     className="flex gap-1 items-center"
+//                   >
+//                     {/* <span>https://en.wiktionary.org/wiki/computer</span> */}
+//                     <span>{item?.sourceUrls}</span>
+//                     <FaExternalLinkAlt className="text-sm text-gray-400" />{" "}
+//                   </Link>
+//                 </div>
+//               )
+//             }
+//           </div>
+
 //         </div>
 //       ))}
 

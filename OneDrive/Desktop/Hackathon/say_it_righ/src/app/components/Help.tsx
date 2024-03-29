@@ -8,10 +8,10 @@ type Props = {};
 
 const Help = (props: Props) => {
     return (
-        <div className='mb-[20px] bg-gray-100'>
+        <div className='pb-[20px] bg-gray-100'>
             <Header></Header>
             <CardHeader />
-            <CardMain></CardMain>
+            {/* <CardMain></CardMain> */}
             <FAQs />
         </div>
     );

@@ -15,10 +15,15 @@ const Search = ({value,onChange,onSubmit,setData}:Props) => {
 
   
   const searchClick = () =>{
-    axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${value}`).then((res) => {
+    axios.get(`https://api.dictionaryapi.dev/api/v2/entries/en/${value}`)
+      .then((res) => {
         setData(res.data);
-        console.log(res.data)
+        console.log(res.data);
       })
+      .catch((error) => {
+        console.error('Error fetching data:', error);
+        setData([]); // Set data to empty array on error
+      });
   }
 
   return (
